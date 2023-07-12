@@ -21,23 +21,6 @@ public class PessoaCandidata extends Pessoa {
     this.votos = 0;
   }
 
-  /**
-   * Obtém o nome identificador da pessoa candidata.
-   *
-   * @return O nome.
-   */
-  public String getNome() {
-    return nome;
-  }
-
-  /**
-   * Define o nome identificador da pessoa candidata.
-   *
-   * @param nome O nome identificador para voto.
-   */
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
 
   /**
    * Obtém o número identificador para voto da pessoa candidata.
