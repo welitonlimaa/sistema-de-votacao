@@ -19,7 +19,7 @@ public class PessoaEleitora extends Pessoa {
   }
 
   /**
-   * Obtém o nome identificador da pessoa eleitora.
+   * Obtém o nome da pessoa eleitora.
    *
    * @return O nome.
    */
@@ -28,9 +28,9 @@ public class PessoaEleitora extends Pessoa {
   }
 
   /**
-   * Define o nome identificador da pessoa eleitora.
+   * Define o nome da pessoa eleitora.
    *
-   * @param nome O nome identificador para voto.
+   * @param nome O nome para voto.
    */
   public void setNome(String nome) {
     this.nome = nome;

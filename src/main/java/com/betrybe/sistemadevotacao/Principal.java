@@ -58,31 +58,14 @@ public class Principal {
       String escolha = scanner.nextLine();
       opcao = Integer.parseInt(escolha);
 
-      switch (opcao) {
-        case 1: {
-          System.out.println("Entre com o CPF da pessoa eleitora: ");
-          String cpfEleitor = scanner.nextLine();
-          System.out.println("Entre com o número da pessoa candidata: ");
-          String numeroCandidato = scanner.nextLine();
-          gerenciamentoVotacao.votar(cpfEleitor, Integer.parseInt(numeroCandidato));
-          break;
-        }
-        case 2: {
-          gerenciamentoVotacao.mostrarResultado();
-          System.out.println("Entre com o CPF da pessoa eleitora: ");
-          String cpfEleitor = scanner.nextLine();
-          System.out.println("Entre com o número da pessoa candidata: ");
-          String numeroCandidato = scanner.nextLine();
-          gerenciamentoVotacao.votar(cpfEleitor, Integer.parseInt(numeroCandidato));
-          break;
-        }
-        case 3: {
-          gerenciamentoVotacao.mostrarResultado();
-          break;
-        }
-        default:
-          System.out.println("Opção inválida!");
-          break;
+      if (opcao == 1) {
+        System.out.println("Entre com o CPF da pessoa eleitora: ");
+        String cpfEleitor = scanner.nextLine();
+        System.out.println("Entre com o número da pessoa candidata: ");
+        String numeroCandidato = scanner.nextLine();
+        gerenciamentoVotacao.votar(cpfEleitor, Integer.parseInt(numeroCandidato));
+      } else if (opcao == 2 || opcao == 3) {
+        gerenciamentoVotacao.mostrarResultado();
       }
     } while (opcao != 3);
 
